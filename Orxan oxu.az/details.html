@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <div class="news-container">
+      <div class="news-content">
+        <div class="js-marquee-wrapper">
+          <div class="js-marquee">
+            <a href="#" class="umami--click--flash">• Prezident İlham Əliyevin yeni Sərəncamı 2 469 şəxsə şamil
+              olunacaq</a>
+            <a href="#" class="umami--click--flash">• Bir ailəyə məzar olanda evdən GÖRÜNTÜLƏR</a>
+            <a href="#" class="umami--click--flash">• Papa Fransiskin dəfn ediləcəyi yer açıqlandı</a>
+            <a href="#" class="umami--click--flash">• ABŞ-də təyyarə aeroportda yanıb</a>
+            <a href="#" class="umami--click--flash">• Arkadi Qukasyan Xocalı soyqırımına rəhbərlik edənlərin adlarını
+              çəkib</a>
+            <a href="#" class="umami--click--flash">• Prezident: "Çin Azərbaycanın 4-cü ən böyük ticarət tərəfdaşına
+              çevrilib"</a>
+            <a href="#" class="umami--click--flash">• İstanbulda UEFA-nın nümayəndəliyi açılacaq</a>
+            <a href="#" class="umami--click--flash">• Azərbaycan Prezidenti İlham Əliyev Çinin "Sinxua" agentliyinə
+              müsahibə verib</a>
+            <a href="#" class="umami--click--flash">• Nazir müşaviri təyin olunan Orxan Fikrətoğlu köhnə vəzifəsində də
+              qalacaq?</a>
+            <a href="#" class="umami--click--flash">• Sumqayıt Tekstil Fabrikində qidadan zəhərlənənlərin ADLARI məlum
+              oldu</a>
+            <a href="#" class="umami--click--flash">• Bəzi rayonlarda leysan olacaq, dolu düşəcək - XƏBƏRDARLIQ</a>
+          </div>
+          <div class="js-marquee">
+            <a href="#" class="umami--click--flash">• Prezident İlham Əliyevin yeni Sərəncamı 2 469 şəxsə şamil
+              olunacaq</a>
+            <a href="#" class="umami--click--flash">• Bir ailəyə məzar olanda evdən GÖRÜNTÜLƏR</a>
+            <a href="#" class="umami--click--flash">• Papa Fransiskin dəfn ediləcəyi yer açıqlandı</a>
+            <a href="#" class="umami--click--flash">• ABŞ-də təyyarə aeroportda yanıb</a>
+            <a href="#" class="umami--click--flash">• Arkadi Qukasyan Xocalı soyqırımına rəhbərlik edənlərin adlarını
+              çəkib</a>
+            <a href="#" class="umami--click--flash">• Prezident: "Çin Azərbaycanın 4-cü ən böyük ticarət tərəfdaşına
+              çevrilib"</a>
+            <a href="#" class="umami--click--flash">• İstanbulda UEFA-nın nümayəndəliyi açılacaq</a>
+            <a href="#" class="umami--click--flash">• Azərbaycan Prezidenti İlham Əliyev Çinin "Sinxua" agentliyinə
+              müsahibə verib</a>
+            <a href="#" class="umami--click--flash">• Nazir müşaviri təyin olunan Orxan Fikrətoğlu köhnə vəzifəsində də
+              qalacaq?</a>
+            <a href="#" class="umami--click--flash">• Sumqayıt Tekstil Fabrikində qidadan zəhərlənənlərin ADLARI məlum
+              oldu</a>
+            <a href="#" class="umami--click--flash">• Bəzi rayonlarda leysan olacaq, dolu düşəcək - XƏBƏRDARLIQ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar relative z-50 bg-white shadow">
+      <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+        <ul class="flex items-center gap-4">
+          <a href="index.html"><img class="w-[135px] h-auto" src="img/logo.svg" alt="Logo"></a>
+          <li class="borders live"><a href="#"><i class="fa fa-wifi mr-1"></i>LIVE</a></li>
+        </ul>
+        <div class="overflow-x-auto max-w-[60%] hide-scroll">
+          <ul class="flex items-center space-x-4 min-w-max">
+            <li class="borders"><a href="#">İlham Əliyev</a></li>
+            <li class="borders"><a href="#">Papa Fransisk</a></li>
+            <li class="borders"><a href="#">Böyük Qayıdış</a></li>
+            <li class="borders"><a href="#">Hava proqnozu</a></li>
+            <li class="borders"><a href="#">ABŞ-Çin iqtisadi müharibəsi</a></li>
+            <li class="borders"><a href="#">Neokolonializmlə mübarizə</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="#"><i class="fa fa-search text-[22px] pt-2"></i></a>
+          <button id="menuToggle" class="block text-[30px] pt-1 focus:outline-none">
+            <i id="menuIcon" class="fa fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobileMenu"
+        class="hidden absolute top-full left-1/2 transform -translate-x-1/2 w-full bg-white z-40 py-4 px-6 min-h-[350px] transition-all duration-300 ease-in-out scale-y-0 origin-top overflow-hidden">
+        <div class="grid grid-cols-6 gap-3 text-center max-w-[1000px] mx-auto py-10">
+          <button class="border border-gray-300 rounded-full py-1 px-4 reng">Ana səhifə</button>
+          <button class="border border-gray-300 rounded-full py-1 px-4 reng">Siyasət</button>
+          <button class="border border-gray-300 rounded-full py-1 px-4 reng">İqtisadiyyat</button>
+          <button class="border border-gray-300 rounded-full py-1 px-4 reng">Cəmiyyət</button>
+          <button class="border border-gray-300 rounded-full py-1 px-4 reng">Ordu</button>
+          <button class="border border-gray-300 rounded-full py-1 px-4 reng">Şou-biznes</button>
+          <button class="border border-gray-300 rounded-full py-1 px-4 reng">Kriminal</button>
+          <button class="border border-gray-300 rounded-full py-1 px-4 reng">İdman</button>
+          <button class="border border-gray-300 rounded-full py-1 px-4 reng">Mədəniyyət</but rengton>
+            <button class="border border-gray-300 rounded-full py-1 px-4 reng">Dünya</button>
+            <button class="border border-gray-300 rounded-full py-1 px-4 reng">Hadisə</button>
+            <button class="border border-gray-300 rounded-full py-1 px-4 reng">Müsahibə</button>
+            <button class="border border-gray-300 rounded-full py-1 px-4 reng">Turizm</button>
+            <button class="border border-gray-300 rounded-full py-1 px-4 reng">İKT</button>
+            <button class="border border-gray-300 rounded-full py-1 px-4 reng">Baku TV</button>
+            <button class="border border-gray-300 rounded-full py-1 px-4 reng">CineMastercard</button>
+            <button class="border border-gray-300 rounded-full py-1 px-4 reng">Digər</button>
+            <button class="border border-gray-300 rounded-full py-1 px-4 reng">Maraqlı</button>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-center max-w-[1000px] mx-auto mt-6 gap-4 text-sm">
+          <div>
+            <span class="font-semibold reng">Karyera</span>
+            <p class="mt-1 mb-0">
+              <a href="mailto:cv@oxu.az" class="text-black hover:underline">cv@oxu.az</a>
+            </p>
+          </div>
+          <div class="text-right md:text-end">
+            <span class="font-semibold reng">Ümumi sorğular üçün</span>
+            <p class="mt-1 mb-0">
+              <a href="mailto:editor@oxu.az" class="text-black hover:underline">editor@oxu.az</a>,
+              <a href="tel:+994552247686" class="text-black hover:underline">055 224 76 86</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      const menuToggle = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+
+      menuToggle.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+
+        if (isHidden) {
+          mobileMenu.classList.remove('hidden');
+          setTimeout(() => {
+            mobileMenu.classList.remove('scale-y-0');
+            mobileMenu.classList.add('scale-y-100');
+          }, 10);
+          menuIcon.classList.remove('fa-bars');
+          menuIcon.classList.add('fa-times');
+        } else {
+          mobileMenu.classList.remove('scale-y-100');
+          mobileMenu.classList.add('scale-y-0');
+          menuIcon.classList.remove('fa-times');
+          menuIcon.classList.add('fa-bars');
+          setTimeout(() => {
+            mobileMenu.classList.add('hidden');
+          }, 500);
+        }
+      });
+    </script>
+
+    <div class="sidebar flex flex-col gap-2">
+      <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px] border mt-[20px]"
+        style="background-color: #051d39; color: white; border: 1px solid #051d39;">
+        🇦🇿
+      </a>
+      <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px]"
+        style="background-color: white; color: #051d39; border: 2px solid #051d39;">
+        🇷🇺
+      </a>
+
+      <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px]"
+        style="background-color: white; color: #051d39; border: 2px solid #051d39;">
+        🇹🇷
+      </a>
+
+      <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px]"
+        style="background-color: white;">
+        <svg xmlns="http://www.w3.org/2000/svg" style="width: 36px; height: 24px; color: #051d39;" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+        </svg>
+      </a>
+      <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-[30px] mb-6"
+        style="background-color: white; border: 2px solid #051d39;">
+        <svg xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; color: #051d39;" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+        </svg>
+      </a>
+    </div>
+  </header>
+  <div class="bg-white text-[#051d39]">
+    <div class="max-w-[75%] mx-auto px-4" id="news-detail-container"></div>
+    <div class="max-w-[75%] mx-auto px-4  pt-[100px]">
+      <h5 class="text-[26px] font-semibold tracking-tight text-[#1894a0] text-left pb-[50px] tracking-wide">
+        Digər xəbərlər
+      </h5>
+      <div id="main-news-container"
+        class="grid gap-6 justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
+      </div>
+    </div>
+  </div>
+  <script src="js/details.js" type="module"></script>
+</body>
+
+</html>

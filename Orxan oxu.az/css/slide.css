@@ -1,0 +1,124 @@
+html, body {
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+.swiper {
+    width: 640px;
+    height: 503px;
+    margin: 100px auto 0 auto;
+    position: relative;
+    overflow: visible; /* vacib! */
+    z-index: 1; /* vacib! */
+}
+.swiper-wrapper {
+    overflow: visible; /* vacib! */
+    transform: none !important;
+}
+.swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* overlay üstə çıxmaq üçün */
+}
+.slide-img {
+    width: 640px;
+    height: 405px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.slide-overlay {
+    position: absolute;
+    bottom: 0px; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 584px;
+    height: 196px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    z-index: 10; /* overlay üstə çıxır */
+}
+.category {
+    font-size: 14px;
+    color: teal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.info {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-top: 10px;
+}
+.slide-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Custom ox düymələri üçün */
+.custom-prev,
+.custom-next {
+    width: 24px;
+    height: 24px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 50%;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background-color: teal;
+    color: white;
+}
+
+/* Swiper pagination */
+.swiper-pagination {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-pagination-bullet {
+    background: black;
+    opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+    background: teal;
+    opacity: 1;
+}
+
+/* Əvvəlki klasslar (indi lazım deyil, amma istəyirsənsə qala bilər) */
+.swiper-container .swiper-button-next,
+.swiper-container .swiper-button-prev {
+    position: static;
+    color: #999;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
