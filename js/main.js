@@ -32,6 +32,7 @@ function renderCards() {
                     </span>
                 </div>
                 <h5 class="text-lg font-semibold tracking-tight h-[80px]">
+                <a href="details.html?id=${news.id}">
                     ${news.title}
                 </h5>
                 <div class="flex justify-between items-center text-sm pt-2 border-t border-gray-200">

@@ -29,7 +29,7 @@ async function renderNews() {
             <i class="fa-regular fa-eye"></i> ${news.view}
           </span>
         </div>
-        <div class="title">${news.title}</div>
+        <a href="details.html?id=${news.id}" class="title text-left text-[#051d39] text-[22px]">${news.title}</a>
       </div>
     </div>
   `;
