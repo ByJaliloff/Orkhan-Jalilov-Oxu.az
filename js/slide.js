@@ -6,6 +6,8 @@ async function renderNews() {
 
   if (!newsData || !Array.isArray(newsData)) return;
 
+  newsData.sort((a, b) => new Date(b.date) - new Date(a.date));
+
   const limitedNews = newsData.slice(0, 8);
 
   newsWrapper.innerHTML = "";
@@ -39,6 +41,10 @@ async function renderNews() {
     loop: true,
     slidesPerView: 1,
     spaceBetween: 10,
+    autoplay: {
+      delay: 4000, 
+      disableOnInteraction: false, 
+    },
     pagination: {
       el: ".custom-pagination",
       clickable: true,
