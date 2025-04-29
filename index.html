@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slide.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -153,45 +154,84 @@
       });
     </script>
 
-    <div class="sidebar flex space between flex-col gap-2">
-        <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px] border mt-[20px]"
-          style="background-color: #051d39; color: white; border: 1px solid #051d39;">
-          🇦🇿
-        </a>
-        <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px]"
-          style="background-color: white; color: #051d39; border: 2px solid #051d39;">
-          🇷🇺
-        </a>
+<div class="sidebar flex flex-col justify-between h-full py-4">
+  
+  <div class="flex flex-col gap-2">
+    <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px] border mt-[20px]"
+      style="background-color: #051d39; color: white; border: 1px solid #051d39;">
+      🇦🇿
+    </a>
+    <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px]"
+      style="background-color: white; color: #051d39; border: 2px solid #051d39;">
+      🇷🇺
+    </a>
+    <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px]"
+      style="background-color: white; color: #051d39; border: 2px solid #051d39;">
+      🇹🇷
+    </a>
+    <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px]"
+      style="background-color: white;">
+      <svg xmlns="http://www.w3.org/2000/svg" style="width: 36px; height: 24px; color: #051d39;" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
+      </svg>
+    </a>
+    <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px]"
+      style="background-color: white; border: 2px solid #051d39;">
+      <svg xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; color: #051d39;" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
+      </svg>
+    </a>
+  </div>
 
-        <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px]"
-          style="background-color: white; color: #051d39; border: 2px solid #051d39;">
-          🇹🇷
-        </a>
-
-        <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px]"
-          style="background-color: white;">
-          <svg xmlns="http://www.w3.org/2000/svg" style="width: 36px; height: 24px; color: #051d39;" fill="none"
-            viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z" />
-          </svg>
-        </a>
-        <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-[30px] mb-6"
-          style="background-color: white; border: 2px solid #051d39;">
-          <svg xmlns="http://www.w3.org/2000/svg" style="width: 20px; height: 20px; color: #051d39;" fill="none"
-            viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
-          </svg>
-        </a>
-    </div>
+  <div class="flex flex-col gap-2 mb-4">
+    <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+      style="background-color: #3b5998; color: white;">
+      <i class="fab fa-facebook-f text-xs"></i>
+    </a>
+    <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+      style="background-color: #E4405F; color: white;">
+      <i class="fab fa-instagram text-xs"></i>
+    </a>
+    <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+      style="background-color: #1DA1F2; color: white;">
+      <i class="fab fa-twitter text-xs"></i>
+    </a>
+    <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+      style="background-color: #25D366; color: white;">
+      <i class="fab fa-whatsapp text-xs"></i>
+    </a>
+    <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+      style="background-color: #0088cc; color: white;">
+      <i class="fab fa-telegram-plane text-xs"></i>
+    </a>
+    <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+      style="background-color: #34A853; color: white;">
+      <i class="fab fa-google-play text-xs"></i>
+    </a>
+  </div>
+</div>
   </header>
+  <div class="swiper" >
+    <div class="swiper-wrapper" id="news-wrapper">
+      <!-- Slaydlər dinamik gələcək -->
+    </div>
 
+    <div class="slide-controls">
+      <button class="custom-prev"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="custom-pagination swiper-pagination"></div>
+      <button class="custom-next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
   <div class="contayner">
     <div id="news-container"
       class="grid gap-6 justify-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto px-4 pt-[120px]">
     </div>
   </div>
+  <script src="js/slide.js" type="module"></script>
   <script src="js/main.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>

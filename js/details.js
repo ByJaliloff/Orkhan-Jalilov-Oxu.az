@@ -17,7 +17,7 @@ async function renderDetail() {
   const popularNews = data.sort((a, b) => b.view - a.view).slice(0, 10);
 
   container.innerHTML = `
-    <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 pt-[20px]">
+    <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8 pt-[120px]">
       <div class="space-y-4 bg-white shadow rounded-lg overflow-hidden border border-gray-200">
         <img class="w-full h-[420px] object-cover" src="${news.img}" alt="${news.title}">
         <div class="p-6 space-y-4">
