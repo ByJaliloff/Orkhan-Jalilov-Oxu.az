@@ -59,6 +59,11 @@ window.handlePost = async () => {
         data.push(resNews)
     }
     printTable()
+
+    form.forEach(input => {
+        input.value = ''
+    });
+    categorySec.value = '';
 }
 
 
@@ -94,7 +99,13 @@ window.handleEdit = async () => {
         document.querySelector('[data-modal-toggle="crud-modal"]').click();
 
         printTable(); 
-        globId = null; 
+        
+        form.forEach(input => {
+            input.value = ''
+        });
+        categorySec.value = ''; 
+
+        globId = null;
 
     } catch (error) {
         console.error("Edit zamanı xəta baş verdi:", error);
