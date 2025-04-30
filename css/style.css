@@ -136,6 +136,7 @@ header {
     }
     .navbar {
       padding: 0 !important;
+      height: 120px !important;
     }
     
   }
@@ -219,3 +220,4 @@ header {
 .hide-scroll::-webkit-scrollbar {
   display: none; 
 }
+

@@ -123,24 +123,27 @@
           </div>
         </div>
       </div>
-
     </div>
-    <div class="navbar relative z-50 bg-white shadow md:hidden">
+    <div class="navbar relative z-50 bg-white shadow md:hidden sec-navbar">
       <div class="container mx-auto px-4 py-2 flex flex-col md:flex-row justify-between items-center">
-        
+
         <!-- Yuxarı hissə: Logo və Axtarış -->
-        <div class="flex w-full justify-between items-center">
+        <div class="flex w-full justify-between items-center top-navbar">
           <ul class="flex items-center gap-4">
             <a href="index.html"><img class="w-[135px] h-auto" src="img/logo.svg" alt="Logo"></a>
           </ul>
           <div class="flex items-center gap-4">
             <a href="#"><i class="fa fa-search text-[22px] pt-2"></i></a>
+            <a href="#" class="inline-flex items-center justify-center w-9 h-6 rounded-[30px] border font-semibold"
+              style="background-color: white; color: #051d39; border: 2px solid #051d39;">
+              🇦🇿
+            </a>
             <button id="menuToggle" class="block text-[30px] pt-1 focus:outline-none">
               <i id="menuIcon" class="fa fa-bars"></i>
             </button>
           </div>
         </div>
-        
+
         <!-- Aşağı hissə: LIVE və Menü -->
         <div class="flex w-full justify-around items-center mt-3">
           <ul class="flex items-center gap-4">
@@ -157,8 +160,8 @@
             </ul>
           </div>
         </div>
-    
       </div>
+    </div>
 
     <script>
       const menuToggle = document.getElementById('menuToggle');
