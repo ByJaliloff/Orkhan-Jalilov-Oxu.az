@@ -16,7 +16,7 @@ function renderCards() {
 
     data.forEach(news => {
         const card = `
-        <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-full max-w-sm text-[#051d39]">
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-full  text-[#051d39]">
             <a href="details.html?id=${news.id}" onclick="incrementView(${news.id})">
                 <img class="w-full h-[200px] object-cover rounded-t-lg" src="${news.img}" alt="" />
             </a>
@@ -31,9 +31,9 @@ function renderCards() {
                         ${news.view}
                     </span>
                 </div>
-                <h5 class="text-lg font-semibold tracking-tight h-[80px]">
+                <h5 class="text-lg font-semibold tracking-tight h-[80px] title-height">
                 <a href="details.html?id=${news.id}">
-                    ${news.title}
+                    ${news.title}</a>
                 </h5>
                 <div class="flex justify-between items-center text-sm pt-2 border-t border-gray-200">
                     <span class="font-bold uppercase text-[#1894a0] tracking-wider">${news.category}</span>

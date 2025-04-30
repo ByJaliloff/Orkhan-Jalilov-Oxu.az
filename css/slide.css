@@ -10,10 +10,37 @@ html, body {
     margin: 0 auto;
     position: relative;
     overflow: visible;
-    z-index: 3;
+    z-index: 100;
     display: block;
     z-index: 10;
 }
+@media (max-width: 768px) {
+    .swiper {
+      width: 100% ;
+      padding-top: 150px !important;
+    }
+    .swiper .slide-img {
+        width: 100% !important; 
+        height: 405px !important; 
+      }
+      .slide-overlay {
+        width: 100% !important;
+        left: 0; 
+        transform: translateX(0);
+      }
+  }
+  @media (max-width: 548px) {
+    .slide-controls{
+        gap: 280px !important;
+        margin-top: 100px !important;
+    }
+  }
+  @media (max-width: 378px) {
+    .slide-controls{
+        gap: 200px !important;
+    }
+  }
+
 .swiper-wrapper {
     overflow: visible;
 }
@@ -23,7 +50,7 @@ html, body {
     height: 100%;
     z-index: 1;
 }
-.slide-img {
+.swiper .slide-img {
     width: 640px;
     height: 405px;
     object-fit: cover;
@@ -70,6 +97,7 @@ html, body {
     justify-content: center;
     gap: 450px;
     margin-top: 60px;
+    width: 100%;
 }
 
 .custom-prev,
