@@ -142,6 +142,11 @@ header {
       text-align: center !important;
     }
   }
+  @media (min-width: 875px) and (max-width: 1240px) {
+    .title-height {
+      height: 150px !important;
+    }
+  }
   @media (max-width: 639px) {
     #news-container {
       padding-left: 0 !important;
