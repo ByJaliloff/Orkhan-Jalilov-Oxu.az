@@ -66,7 +66,7 @@ function renderPopularNews(data) {
   return data
     .map(item => `
       <a href="details.html?id=${item.id}">
-        <div class="flex space-x-4 bg-white p-4 shadow rounded-lg border border-gray-200" style="width: 282px; height: auto;">
+        <div class="flex space-x-4 bg-white p-4 shadow rounded-[10px] mb-[12px]  " style="width: 282px; height: auto; background-color: #FDFAF6">
           <div class="flex-1">
             <div class="flex justify-between text-xs text-gray-500">
               <span><i class="far fa-clock"></i> ${item.date}</span>
