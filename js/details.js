@@ -21,7 +21,7 @@ async function renderDetail() {
       <div class="space-y-4 bg-white shadow rounded-lg overflow-hidden border border-gray-200">
         <img class="w-full h-[420px] object-cover" src="${news.img}" alt="${news.title}">
         <div class="p-6 space-y-4">
-          <div class="flex justify-between">
+          <div class="flex justify-between flex-col-360">
             <nav class="text-sm text-gray-500 space-x-1">
               <a href="index.html" class="hover:underline">Ana səhifə</a> /
               <a href="#" class="hover:underline">${news.category}</a>
@@ -47,7 +47,7 @@ async function renderDetail() {
           </p>
         </div>
       </div>
-      <aside class="space-y-4 h-full">
+      <aside class="space-y-4 h-full hide-on-small">
         <h2 class="text-[24px] text-[#1894a0] font-semibold pb-2">Ən çox oxunanlar</h2>
         <div id="popular-news" class="space-y-3 text-sm h-screen overflow-y-auto w-[300px]">
           ${renderPopularNews(popularNews)}
@@ -172,7 +172,7 @@ async function renderMainNewsCards() {
   const data = await getAllNews();
   data.forEach(news => {
     const card = `
-      <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-full max-w-sm text-[#051d39]">
+      <div class="bg-white border border-gray-200 rounded-lg shadow-sm w-full max-w-sm text-[#051d39] responsive-card">
         <a href="details.html?id=${news.id}">
           <img class="w-full h-[200px] object-cover rounded-t-lg" src="${news.img}" alt="" />
         </a>
@@ -187,7 +187,7 @@ async function renderMainNewsCards() {
               ${news.view}
             </span>
           </div>
-          <h5 class="text-lg font-semibold tracking-tight h-[80px]">
+          <h5 class="text-lg font-semibold tracking-tight h-[80px] title-height ">
                 <a href="details.html?id=${news.id}">
                     ${news.title}
                 </h5>
