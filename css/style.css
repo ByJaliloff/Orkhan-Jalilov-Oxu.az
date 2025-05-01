@@ -138,7 +138,9 @@ header {
       padding: 0 !important;
       height: 120px !important;
     }
-    
+    .responsive-heading {
+      text-align: center !important;
+    }
   }
   @media (max-width: 639px) {
     #news-container {
