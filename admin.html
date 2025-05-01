@@ -9,14 +9,25 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.11/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="https://cdn.tiny.cloud/1/ethk104ryjxiztyy477myulkpu4lte2nki6uxh6ocr3p6380/tinymce/7/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+          selector: '#mytextarea',
+          plugins: [
+                    'code',
+                    'anchor', 'autolink', 'charmap', 'codesample', 'emoticons',
+                    'image', 'link', 'lists', 'media', 'searchreplace',
+                    'table', 'visualblocks', 'wordcount'],
+          toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+        });
+      </script>
 </head>
 
 <body class="bg-[#2f2f2f]">
     <div class="container mx-auto py-[5vh]">
         <div id="crud-modal" tabindex="-1" aria-hidden="true"
             class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
-            <div class="relative p-4 w-full max-w-md max-h-full">
-
+            <div class="relative p-4 w-full max-w-[700px] max-h-full">
                 <div class="relative bg-[#1f1f1f] rounded-lg shadow-sm dark:bg-gray-800"> 
                     <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
                         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
@@ -80,9 +91,7 @@
                             </div>
                             <div class="col-span-2">
                                 <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">News Content</label>
-                                <textarea id="description" rows="4"
-                                    class="block p-2.5 w-full text-sm text-white bg-gray-700 rounded-lg border border-gray-500 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="Write news content here"></textarea>
+                                <textarea id="mytextarea">Hello, World!</textarea>
                             </div>
                         </div>
                         <div class="flex justify-between">

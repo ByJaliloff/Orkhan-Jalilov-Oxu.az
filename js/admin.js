@@ -75,9 +75,8 @@ window.handleEditFill = (id) => {
         form[0].value = element.title;
         form[1].value = element.img;
         form[2].value = element.date;
-        form[3].value = element.content;
+        tinymce.get('mytextarea').setContent(element.content);
         categorySec.value = element.category;
-        
         globId = id; 
         document.querySelector('[data-modal-toggle="crud-modal"]').click();
     }
@@ -118,7 +117,7 @@ function getVal() {
         title: form[0].value,
         img: form[1].value,
         date: form[2].value,
-        content: form[3].value,
+        content: tinymce.get('mytextarea').getContent(),
         category: categorySec.value,
         like: 0,
         dislike: 0,
