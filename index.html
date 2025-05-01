@@ -14,7 +14,7 @@
 
 <body>
   <header>
-    <div class="news-container">
+    <div class="news-container" id="menu">
       <div class="news-content">
         <div class="js-marquee-wrapper">
           <div class="js-marquee">
@@ -83,7 +83,7 @@
         </div>
       </div>
 
-      <div id="mobileMenu"
+      <div id="mobileMenuDesktop"
         class="hidden absolute top-full left-1/2 transform -translate-x-1/2 w-full bg-white z-40 py-4 px-6 min-h-[350px] transition-all duration-300 ease-in-out scale-y-0 origin-top overflow-hidden">
         <div class="menu-container grid grid-cols-6 gap-3 text-center w-[930px] mx-auto py-10">
           <button class="border border-gray-300 rounded-full py-1 px-4 reng  w-[145px]">Ana səhifə</button>
@@ -127,7 +127,6 @@
     <div class="navbar relative z-50 bg-white shadow md:hidden sec-navbar">
       <div class="container mx-auto px-4 py-2 flex flex-col md:flex-row justify-between items-center">
 
-        <!-- Yuxarı hissə: Logo və Axtarış -->
         <div class="flex w-full justify-between items-center top-navbar">
           <ul class="flex items-center gap-4">
             <a href="index.html"><img class="w-[135px] h-auto" src="img/logo.svg" alt="Logo"></a>
@@ -138,13 +137,12 @@
               style="background-color: white; color: #051d39; border: 2px solid #051d39;">
               🇦🇿
             </a>
-            <button id="menuToggle" class="block text-[30px] pt-1 focus:outline-none">
-              <i id="menuIcon" class="fa fa-bars"></i>
+            <button id="menuToggleOpen" class="block text-[30px] pt-1 focus:outline-none">
+              <i class="fa fa-bars"></i>
             </button>
           </div>
         </div>
 
-        <!-- Aşağı hissə: LIVE və Menü -->
         <div class="flex w-full justify-around items-center mt-3">
           <ul class="flex items-center gap-4">
             <li class="borders live"><a href="#"><i class="fa fa-wifi mr-1"></i>LIVE</a></li>
@@ -162,35 +160,86 @@
         </div>
       </div>
     </div>
+    <div id="mobileMenuMobile" class="fixed inset-0 bg-white z-50 p-6 overflow-y-auto hidden transform scale-y-0 origin-top transition duration-500 md:hidden">
+      <div class="flex justify-between items-center mb-10">
+        <a href="index.html"><img class="w-[120px]" src="img/logo.svg" alt="Logo"></a>
 
-    <script>
-      const menuToggle = document.getElementById('menuToggle');
-      const mobileMenu = document.getElementById('mobileMenu');
-      const menuIcon = document.getElementById('menuIcon');
+        <button id="menuToggleClose" class="text-2xl">
+          <i class="fa fa-times"></i>
+        </button>       
+      </div>
 
-      menuToggle.addEventListener('click', () => {
-        const isHidden = mobileMenu.classList.contains('hidden');
+      <div class="flex justify-center gap-6 mb-10 text-xl">
+        <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-full"
+        style="background-color: #3b5998; color: white;">
+        <i class="fab fa-facebook-f text-xs"></i>
+      </a>
+      <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-full "
+        style="background-color: #E4405F; color: white;">
+        <i class="fab fa-instagram text-xs"></i>
+      </a>
+      <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-full "
+        style="background-color: #1DA1F2; color: white;">
+        <i class="fab fa-twitter text-xs"></i>
+      </a>
+      <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-full "
+        style="background-color: #25D366; color: white;">
+        <i class="fab fa-whatsapp text-xs"></i>
+      </a>
+      <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-full "
+        style="background-color: #0088cc; color: white;">
+        <i class="fab fa-telegram-plane text-xs"></i>
+      </a>
+      <a href="#" class="inline-flex items-center justify-center w-6 h-6 rounded-full "
+        style="background-color: #34A853; color: white;">
+        <i class="fab fa-google-play text-xs"></i>
+      </a>
+      </div>
+    
+      <div class="flex flex-wrap gap-4 justify-center mb-10">
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Ana səhifə</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Siyasət</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">İqtisadiyyat</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Cəmiyyət</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">İdman</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Dünya</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Mədəniyyət</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Ordu</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Şou-biznes</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Kriminal</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Hadisə</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Müsahibə</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Turizm</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">İKT</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Baku TV</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">CineMastercard</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Digər</button>
+        <button class="px-3 py-1 rounded-full border border-gray-300 reng text-[14px] font-semibold">Maraqlı</button>
+      </div>
+    
+      <div class="flex justify-between mb-10 text-center">
+        <div>
+          <i class="fa fa-info-circle text-2xl"></i>
+          <p class="text-sm mt-1">Haqqımızda</p>
+        </div>
+        <div>
+          <i class="fa fa-bullhorn text-2xl"></i>
+          <p class="text-sm mt-1">Reklam</p>
+        </div>
+        <div>
+          <i class="fa fa-phone text-2xl"></i>
+          <p class="text-sm mt-1">Əlaqə</p>
+        </div>
+      </div>
 
-        if (isHidden) {
-          mobileMenu.classList.remove('hidden');
-          setTimeout(() => {
-            mobileMenu.classList.remove('scale-y-0');
-            mobileMenu.classList.add('scale-y-100');
-          }, 10);
-          menuIcon.classList.remove('fa-bars');
-          menuIcon.classList.add('fa-times');
-        } else {
-          mobileMenu.classList.remove('scale-y-100');
-          mobileMenu.classList.add('scale-y-0');
-          menuIcon.classList.remove('fa-times');
-          menuIcon.classList.add('fa-bars');
-          setTimeout(() => {
-            mobileMenu.classList.add('hidden');
-          }, 500);
-        }
-      });
-    </script>
+      <div class="flex justify-between">
+        <img src="img/Google_Play_Store_badge_EN.svg" alt="Google Play" class="w-[150px] h-[50px]">
+        <img src="img/Download_on_the_App_Store_Badge.svg" alt="App Store" class="w-[150px] h-[50px]">
+      </div>
+    </div>
+    
 
+    <script src="js/header.js"></script>
 
   </header>
   <div class="sidebar hidden md:flex flex-col justify-between h-full">
