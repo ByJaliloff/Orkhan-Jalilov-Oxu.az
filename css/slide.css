@@ -107,16 +107,15 @@ html, body {
   justify-content: center;
   width: 30px;
   height: 30px;
-  background-color: #ccc;
+  border: 1px solid #d1d1d1;
   border-radius: 50%;
-  border: none;
   cursor: pointer;
   z-index: 10;
 }
 
 .custom-prev:hover,
 .custom-next:hover {
-    background-color: teal;
+    background-color: #051d39;
     color: white;
 }
 

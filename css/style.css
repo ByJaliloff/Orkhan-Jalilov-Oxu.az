@@ -214,9 +214,22 @@ header {
     color: #051d39;
     font-size: 15px;
   }
-  .live{
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .live {
     color: white !important;
-    background-color: red;
+    background-color: #f63147;
+    animation: pulse 2s infinite;
   }
   
   .nav-links a {
