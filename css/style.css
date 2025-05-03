@@ -174,7 +174,7 @@ header {
       padding-right: 0 !important;
     }
   }
-  @media (max-width: 992px) {
+  @media (max-width: 1024px) {
     .hide-on-small {
       display: none;
     }
